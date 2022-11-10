@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="fret.css"> 
+  <meta charset="utf-8">
+  <title>fretboard trainer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="highscore">
+    High score:
+  </div>
+  <div id="mainsection">
+      <div id="stringtogglediv">
+      </div>
+      <div id="tablediv">
+      </div>
+    <div id="settings">
+      <div id="checkboxdiv" class = "settingline">    
+        <input type="checkbox" id="shownotetoggle" name="shownotetoggle">
+        <label for="shownotetoggle">Show notes</label>
+      </div>
+      <div class="settingline">
+      <label for="timelimit">Time limit:</label>
+      <input id="timelimit" type="number" value="60">
+      </div>
+      <div id="tuningdiv">
+      <div class="settingline">
+      <label for="tuningselector">Tuning:</label>
+      <select name="tuning" id="tuningselector">
+      <option value="estandard">E standard</option>
+      <option value="dropd">Drop D</option>
+      <option value="dstandard">D standard</option>
+      <option value="dropc">Drop C</option>
+      <option value="cstandard">C standard</option>
+      </select>
+      </div>
+      </div>
+      <div id="customtuningdiv">
+        <div>
+          <div class="settingline">
+          <input type = "checkbox" id="customtuningcheckbox">
+          <label for="customtuningcheckbox">Custom tuning</label>
+        </div>
+        </div>
+        <div class="settingline">
+        <label for="stringquantityselector">Number of strings:</label>
+        <select id="stringquantityselector">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        </select>
+        </div>
+        <div id="customtuningselectors" class="settingline">
+        </div>
+        </div>
+    </div>
+  </div>
+  <div id="qanda">
+    <div id="questionbox"></div>
+    <div id="answerbox">
+      <p id="answerbox">Click the correct fret</p>
+    </div>
+    <p id="scoretracker">Score:</p>
+    <p id="timecount">Time:</p>
+    <button id="startbutton" class="mybtn">Start</button>
+    <button id="resetbutton" class="mybtn">Reset</button>
+  </div>
+</body>
+<script src="fretest.js"></script>
+</html>
